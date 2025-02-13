@@ -1,0 +1,13 @@
+package com.yedam.app.emp.mapper;
+
+// No annotation!!
+public interface EmpMapper {
+	// Mapper의 골격 혹은 구조를 의미한다.
+	// SELECT => 리턴 타입 List or VO 클래스
+	// 전체조회
+	
+	// 단건조회
+	
+	// DML => 리턴타입 무조건 int
+	// 등록
+}

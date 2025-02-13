@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+   
+    <!-- bean definitions here -->
+	<bean id="chef" class="com.yedam.app.java.Chef"/>
+	<bean class="com.yedam.app.java.Restaurant">
+		<constructor-arg ref="chef"/>
+	</bean>
+	
+	<!-- Spring의 IoC컨테이너에 넣을 Bean 등록 -->
+	<bean id="owner" class="com.yedam.app.spring.xml.User"/>
+	
+	<bean class="com.yedam.app.spring.xml.NHCard">
+		<!-- 클래스 사이의 관계설정 - DI : 생성자 주입 -->
+		<constructor-arg ref="owner"/> <!-- ref 위쪽 빈 id값을 가져옴 -->
+	</bean>
+	
+	<bean id="card" class="com.yedam.app.spring.xml.KBCard">
+		<!-- 클래스 사이의 관계설정 - DI : 세터 주입 -->
+		<property name="owner" ref="owner"/>
+	</bean>
+	
+	<!-- 어노테이션 가져옴 -->
+	<!-- <context:component-scan base-package="com.yedam.app.spring.anotation"/>-->
+	<context:component-scan base-package="com.yedam.app.spring.javabase"/>
+	
+</beans>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- TestEmpMapper 인터페이스랑 연동되어 DOA클래스를 자동 생성 -->
+<mapper namespace="com.yedam.app.mybatis.mapper.TestEmpMapper">
+	<select id="empList" resultType="com.yedam.app.mybatis.service.EmpInfo">
+		SELECT employee_id, 
+			last_name, 
+			hire_date, 
+			salary
+		FROM employees
+		ORDER BY employee_id
+	</select>
+</mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace는 어느 인터페이스를 쓸 건지 말한다 -->
+<mapper namespace="com.yedam.app.mybatis.mapper.TestEmpMapper">
+	<!-- id는 함수 이름 -->
+	<!-- parameterType은 매개변수 자료형 -->
+	<!-- resultType는 리턴하는 VO -->
+	<!-- typeAlias는 네임스페이스 제외한 자료형에 대한 별명을 지정한다 -->
+	<select id="empList" resultType="EmpInfo">
+		SELECT employee_id, 
+			last_name, 
+			hire_date, 
+			salary
+		FROM employees
+		ORDER BY employee_id
+	</select>
+</mapper>
