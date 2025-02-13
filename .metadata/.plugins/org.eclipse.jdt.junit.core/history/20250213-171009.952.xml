@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Boot01ApplicationTests" project="boot01" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.yedam.app.Boot01ApplicationTests" time="1.361" displayname="Boot01ApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.yedam.app.Boot01ApplicationTests]">
+    <testcase name="infoTest" classname="com.yedam.app.Boot01ApplicationTests" time="1.361" displayname="infoTest()" uniqueid="[engine:junit-jupiter]/[class:com.yedam.app.Boot01ApplicationTests]/[method:infoTest()]">
+      <failure>java.lang.AssertionError: expected:&lt;King&gt; but was:&lt;null&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:835)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:120)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at com.yedam.app.Boot01ApplicationTests.infoTest(Boot01ApplicationTests.java:38)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

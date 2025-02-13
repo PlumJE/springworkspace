@@ -1,5 +1,8 @@
 package com.yedam.app;
 
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
+
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -16,11 +19,37 @@ class Boot01ApplicationTests {
 	@Autowired	// 필드 주입 => 단순 테스트 용도로만 사용해야 한다!!!
 	private EmpMapper empMapper;
 	
-	@Test
+	//@Test
 	void contextLoads() {
 		List<EmpVO> list = empMapper.selectEmpList();
 		for(EmpVO emp : list) {
 			System.out.println(emp);
 		}
+		assertTrue(!list.isEmpty());
+	}
+	
+	//@Test
+	void infoTest() {
+		EmpVO empVO = new EmpVO();
+		empVO.setEmployeeId(100);
+		
+		EmpVO findVO = empMapper.selectEmpInfo(empVO);
+		
+		assertEquals("King", findVO.getLastName());
+		// 첫번째 매개변수 : 기대값
+		// 두번째 매개변수 : 실제값
+		// => 두 개가 같으면 테스트 성공, 다르면 실패
+	}
+	
+	@Test
+	void insertTest() {
+		EmpVO empVO = new EmpVO();
+		empVO.setLastName("Kang");
+		empVO.setEmail("kang@daum.net");
+		empVO.setJobId("SA_REP");
+		
+		int result = empMapper.insertEmpInfo(empVO);
+		
+		assertEquals(1, result);
 	}
 }

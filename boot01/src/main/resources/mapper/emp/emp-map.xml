@@ -18,5 +18,41 @@
 		FROM employees
 		ORDER BY employee_id
 	</select>
+	
 	<!-- 단건조회 -->
+	<select id="selectEmpInfo" parameterType="EmpVO" resultType="EmpVO">
+		SELECT employee_id,
+		    first_name,
+		    last_name,
+		    email,
+		    phone_number,
+		    hire_date,
+		    job_id,
+		    salary,
+		    commission_pct,
+		    manager_id,
+		    department_id
+		FROM employees
+		WHERE employee_id = #{employeeId}
+		<!-- Mybatis => 
+			PrepareStatement => 
+			데이터 타입에 따른 작업 -->
+		<!-- #{} : parameterType에 선언된 변수의 필드값을 넣는다!! -->
+	</select>
+	
+	<!-- 등록 -->
+	<insert id="insertEmpInfo" parameterType="EmpVO">
+		INSERT INTO employees(
+			employee_id,
+			last_name,
+			email,
+			job_id,
+			hire_date)
+		VALUES(
+			employees_seq.NEXTVAL,
+			#{lastName},
+			#{email},
+			#{jobId},
+			SYSDATE)
+	</insert>
 </mapper>

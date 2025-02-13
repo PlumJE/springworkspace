@@ -5524,3 +5524,631 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.pla
 2025-02-13 12:02:06,529 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-02-13 12:02:06,557 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-02-13 12:02:06,576 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 12:17:09,291 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-02-13 12:18:44,022 [Worker-17: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:192)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 12:18:44,242 [Worker-17: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getModuleCLIOptions(AbstractJavaLaunchConfigurationDelegate.java:1156)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:252)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 12:29:31,888 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 12:29:31,902 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 12:29:31,908 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 12:29:34,966 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 12:29:34,973 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 12:29:34,977 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 12:30:21,624 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 12:30:21,631 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 12:30:21,635 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 12:32:05,907 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 12:32:05,926 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 12:32:05,932 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 12:43:28,351 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 12:43:28,357 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 12:43:28,361 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 12:49:10,278 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 12:49:10,286 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 12:49:10,290 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 12:49:20,958 [Worker-25: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchAdded(TestJarLaunchListener.java:118)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesAdded(TestJarLaunchListener.java:185)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:931)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:690)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:735)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 12:49:21,222 [Worker-25: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:192)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 12:49:21,423 [Worker-25: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getModuleCLIOptions(AbstractJavaLaunchConfigurationDelegate.java:1156)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:252)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 13:04:09,226 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 13:04:09,241 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 13:04:09,246 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 13:04:18,292 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 13:04:18,301 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 13:04:18,304 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 13:07:36,382 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 13:07:36,388 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 13:07:36,391 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 13:08:06,157 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 13:08:06,163 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 13:08:06,166 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 13:09:39,270 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 13:09:39,277 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 13:09:39,280 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 13:10:40,274 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 13:10:40,281 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 13:10:40,285 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:21:10,390 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:21:10,413 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 14:21:10,418 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:21:25,140 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:21:25,147 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 14:21:25,150 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:23:34,880 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:23:34,897 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 14:23:34,900 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:24:37,361 [Worker-52: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchAdded(TestJarLaunchListener.java:118)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesAdded(TestJarLaunchListener.java:185)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:931)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:690)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:735)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 14:24:37,586 [Worker-52: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:192)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 14:24:37,792 [Worker-52: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getModuleCLIOptions(AbstractJavaLaunchConfigurationDelegate.java:1156)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:252)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 14:26:50,262 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:26:50,268 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 14:26:50,271 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:26:54,225 [Worker-55: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchAdded(TestJarLaunchListener.java:118)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesAdded(TestJarLaunchListener.java:185)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:931)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:690)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:735)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 14:26:54,483 [Worker-55: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:192)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 14:26:54,654 [Worker-55: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getModuleCLIOptions(AbstractJavaLaunchConfigurationDelegate.java:1156)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:252)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 14:28:56,433 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:28:56,452 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 14:28:56,457 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:35:04,416 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:35:04,421 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:35:04,426 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:35:10,610 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:35:10,616 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 14:35:10,619 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:35:25,446 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 14:35:25,447 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:35:25,450 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:39:55,739 [Worker-60: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchAdded(TestJarLaunchListener.java:118)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesAdded(TestJarLaunchListener.java:185)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:931)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:690)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:735)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 14:39:58,211 [Worker-60: Launching Boot01ApplicationTests] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:39:58,219 [Worker-60: Launching Boot01ApplicationTests] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 14:39:58,222 [Worker-60: Launching Boot01ApplicationTests] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:39:58,436 [Worker-60: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:192)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 14:39:58,611 [Worker-60: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getModuleCLIOptions(AbstractJavaLaunchConfigurationDelegate.java:1156)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:252)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 14:42:18,526 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:42:18,533 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:42:18,537 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:43:00,147 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:43:00,153 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:43:00,157 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:43:39,851 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:43:39,857 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:43:39,860 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:47:36,901 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:47:36,908 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:47:36,913 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:48:44,367 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:48:44,373 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:48:44,375 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:56:26,930 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:56:26,938 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:56:26,943 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 14:56:37,898 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:56:37,905 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 14:56:37,909 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 15:04:17,912 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:04:17,919 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:04:17,922 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 15:07:57,187 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:07:57,193 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:07:57,196 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 15:09:27,060 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:09:27,067 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:09:27,071 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 15:37:54,135 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:37:54,147 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:37:54,150 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 15:41:12,883 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:41:12,889 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:41:12,893 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 15:42:20,717 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:42:20,728 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:42:20,732 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 15:46:19,427 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:46:19,433 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:46:19,437 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 15:48:09,771 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:48:09,777 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:48:09,780 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 15:50:20,573 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:50:20,579 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 15:50:20,582 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 16:00:02,611 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 16:00:02,613 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 16:00:02,618 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 16:03:09,126 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 16:03:09,127 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 16:03:09,131 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 16:06:15,137 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 16:06:15,138 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 16:06:15,142 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 16:08:56,365 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 16:08:56,367 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 16:08:56,371 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 16:09:21,124 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 16:09:21,125 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 16:09:21,127 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 16:09:35,250 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 16:09:35,251 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 16:09:35,253 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
+2025-02-13 16:09:38,505 [Worker-102: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchAdded(TestJarLaunchListener.java:118)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesAdded(TestJarLaunchListener.java:185)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:931)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:690)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:735)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 16:09:38,739 [Worker-102: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:464)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getClasspathAndModulepath(JUnitLaunchConfigurationDelegate.java:685)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:192)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 16:09:38,919 [Worker-102: Launching Boot01ApplicationTests] ERROR o.e.m.j.i.l.MavenRuntimeClasspathProvider - Could not resolve JUnit5 dependency org.junit.platform:junit-platform-launcher:1.11.4
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.junit.platform:junit-platform-launcher:jar:1.11.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addResolvedJUnit5Dependency(MavenRuntimeClasspathProvider.java:293)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMissingJUnit5ExecutionDependencies(MavenRuntimeClasspathProvider.java:274)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.addMavenClasspathEntries(MavenRuntimeClasspathProvider.java:234)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath0(MavenRuntimeClasspathProvider.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.lambda$2(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.resolveClasspath(MavenRuntimeClasspathProvider.java:170)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.resolveClasspath(RuntimeClasspathProvider.java:68)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1676)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getModuleCLIOptions(AbstractJavaLaunchConfigurationDelegate.java:1156)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.getVMRunnerConfiguration(JUnitLaunchConfigurationDelegate.java:252)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate.launch(JUnitLaunchConfigurationDelegate.java:275)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-02-13 16:11:03,752 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 16:11:03,754 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 16:11:03,757 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\springworkspace\boot01\src\test\resources
