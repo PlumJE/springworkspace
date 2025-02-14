@@ -3831,3 +3831,6 @@ java.lang.IllegalStateException: Disconnected before saving. https://bugs.eclips
 
 !ENTRY org.eclipse.egit.ui 4 0 2025-02-14 09:49:34.622
 !MESSAGE Can't connect to any repository: 
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-02-14 09:50:04.984
+!MESSAGE Can't connect to any repository: 
