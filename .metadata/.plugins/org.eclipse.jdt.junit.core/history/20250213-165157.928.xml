@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="Boot01ApplicationTests" project="boot01" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.yedam.app.Boot01ApplicationTests" time="1.327" displayname="Boot01ApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.yedam.app.Boot01ApplicationTests]">
-    <testcase name="contextLoads" classname="com.yedam.app.Boot01ApplicationTests" time="1.327" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.yedam.app.Boot01ApplicationTests]/[method:contextLoads()]"/>
-  </testsuite>
-</testrun>
