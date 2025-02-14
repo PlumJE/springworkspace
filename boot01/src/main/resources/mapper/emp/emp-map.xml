@@ -55,4 +55,20 @@
 			#{jobId},
 			SYSDATE)
 	</insert>
+	
+	<!-- 수정 -->
+	<update id="updateEmpInfo" parameterType="EmpVO">
+		UPDATE employees
+		SET last_name = #{lastName},
+			job_id = #{jobId},
+			hire_date = #{hireDate}
+		WHERE employee_id = #{employeeId}
+	</update>
+	
+	<!-- 삭제 -->
+	<delete id="deleteEmpInfo" parameterType="int">
+		<!-- 객체가 아닌 기본 타입일 경우 매개변수 이름 그대로 사용 -->
+		DELETE FROM employees
+		WHERE employee_id = #{empId}
+	</delete>
 </mapper>

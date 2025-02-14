@@ -41,7 +41,7 @@ class Boot01ApplicationTests {
 		// => 두 개가 같으면 테스트 성공, 다르면 실패
 	}
 	
-	@Test
+	//@Test
 	void insertTest() {
 		EmpVO empVO = new EmpVO();
 		empVO.setLastName("Kang");
@@ -51,5 +51,27 @@ class Boot01ApplicationTests {
 		int result = empMapper.insertEmpInfo(empVO);
 		
 		assertEquals(1, result);
+	}
+	
+	@Test
+	void updateTest() {
+		// 1) 단건조회
+		EmpVO empVO = new EmpVO();
+		empVO.setEmployeeId(100);
+		
+		EmpVO findVO = empMapper.selectEmpInfo(empVO);
+		
+		// 2) 수정할 데이터
+		findVO.setLastName("Han");
+		
+		// 3) 수정
+		int result = empMapper.updateEmpInfo(findVO);
+		
+		assertEquals(1, result);
+	}
+	
+//	@Test
+	void deleteTest() {
+		
 	}
 }
