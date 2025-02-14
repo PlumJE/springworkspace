@@ -3,6 +3,9 @@ package com.yedam.app;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -42,27 +45,32 @@ class Boot01ApplicationTests {
 	}
 	
 	//@Test
-	void insertTest() {
+	void insertTest() throws ParseException {
 		EmpVO empVO = new EmpVO();
-		empVO.setLastName("Kang");
-		empVO.setEmail("kang@daum.net");
-		empVO.setJobId("SA_REP");
+		empVO.setLastName("Lee");
+		empVO.setEmail("lje64257@gmail.com");
+		empVO.setJobId("IT_PROG");
+		
+//		SimpleDateFormat sdf = new SimpleDateFormat("yyMMdd");
+//		Date date = sdf.parse("240501");
+//		empVO.setHireDate(date);
 		
 		int result = empMapper.insertEmpInfo(empVO);
 		
 		assertEquals(1, result);
 	}
 	
-	@Test
+	//@Test
 	void updateTest() {
 		// 1) 단건조회
 		EmpVO empVO = new EmpVO();
-		empVO.setEmployeeId(100);
+		empVO.setEmployeeId(207);
 		
 		EmpVO findVO = empMapper.selectEmpInfo(empVO);
 		
 		// 2) 수정할 데이터
 		findVO.setLastName("Han");
+		findVO.setJobId(null);
 		
 		// 3) 수정
 		int result = empMapper.updateEmpInfo(findVO);
@@ -70,8 +78,23 @@ class Boot01ApplicationTests {
 		assertEquals(1, result);
 	}
 	
-//	@Test
+	//@Test
 	void deleteTest() {
+		int result = empMapper.deleteEmpInfo(207);
+		assertEquals(1, result);
+	}
+	
+	@Test
+	void selectKeyTest() {
+		EmpVO empVO = new EmpVO();
+		empVO.setLastName("Hong");
+		empVO.setEmail("Hong@google.com");
+		empVO.setJobId("IT_PROG");
 		
+		// employee_id = null
+		int result = empMapper.insertEmpInfo(empVO);
+		System.out.println("====" + empVO.getEmployeeId());
+		
+		assertEquals(1, result);
 	}
 }

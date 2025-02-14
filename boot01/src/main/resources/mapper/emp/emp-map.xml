@@ -4,34 +4,34 @@
 <mapper namespace="com.yedam.app.emp.mapper.EmpMapper">
 	<!-- 전체조회 -->
 	<select id="selectEmpList" resultType="EmpVO">
-		SELECT employee_id,
-		    first_name,
-		    last_name,
-		    email,
-		    phone_number,
-		    hire_date,
-		    job_id,
-		    salary,
-		    commission_pct,
-		    manager_id,
-		    department_id
+		SELECT employee_id
+			, first_name
+		    , last_name
+		    , email
+		    , phone_number
+		    , hire_date
+		    , job_id
+		    , salary
+		    , commission_pct
+		    , manager_id
+		    , department_id
 		FROM employees
 		ORDER BY employee_id
 	</select>
 	
 	<!-- 단건조회 -->
 	<select id="selectEmpInfo" parameterType="EmpVO" resultType="EmpVO">
-		SELECT employee_id,
-		    first_name,
-		    last_name,
-		    email,
-		    phone_number,
-		    hire_date,
-		    job_id,
-		    salary,
-		    commission_pct,
-		    manager_id,
-		    department_id
+		SELECT employee_id
+		    , first_name
+		    , last_name
+		    , email
+		    , phone_number
+		    , hire_date
+		    , job_id
+		    , salary
+		    , commission_pct
+		    , manager_id
+		    , department_id
 		FROM employees
 		WHERE employee_id = #{employeeId}
 		<!-- Mybatis => 
@@ -42,26 +42,53 @@
 	
 	<!-- 등록 -->
 	<insert id="insertEmpInfo" parameterType="EmpVO">
-		INSERT INTO employees(
-			employee_id,
-			last_name,
-			email,
-			job_id,
-			hire_date)
-		VALUES(
-			employees_seq.NEXTVAL,
-			#{lastName},
-			#{email},
-			#{jobId},
-			SYSDATE)
+		<selectKey keyProperty="employeeId" resultType="Integer" order="BEFORE">
+		<!-- keyProperty는 결과를 담을 필드/변수를 뜻한다 -->
+			SELECT NVL(MAX(employee_id), 100) + 1
+			FROM employees
+		</selectKey>
+		INSERT INTO employees
+			(
+				employee_id
+				, last_name
+				, email
+				, job_id
+				, hire_date
+				<if test="salary != null and salary > 0">
+				, salary
+				</if>
+			)
+		VALUES
+			(
+				<!-- employees_seq.NEXTVAL -->
+				#{employeeId}
+				, #{lastName}
+				, #{email}
+				, #{jobId}
+				<choose>
+					<when test="hireDate != null">
+				, #{hireDate}
+					</when>
+					<otherwise>
+				, SYSDATE
+					</otherwise>
+				</choose>
+				<if test="salary != null and salary > 0">
+				, #{salary}
+				</if>
+			)
 	</insert>
 	
 	<!-- 수정 -->
 	<update id="updateEmpInfo" parameterType="EmpVO">
 		UPDATE employees
-		SET last_name = #{lastName},
-			job_id = #{jobId},
-			hire_date = #{hireDate}
+		SET 
+			last_name = #{lastName}
+			<if test="jobId != null and !jobId.equals('')">
+			<!-- 특정 조건을 만족할 때만 실행되는 구문 -->
+			, job_id = #{jobId}
+			</if>
+			, hire_date = #{hireDate}
 		WHERE employee_id = #{employeeId}
 	</update>
 	
