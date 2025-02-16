@@ -54,6 +54,7 @@ public class EmpServiceImpl implements EmpService {
 		map.put("result", isSuccessed);
 		map.put("target", empVO);
 		
+		// 항상 {"result": 결과부울값, "target": empVO}을 리턴
 		return map;
 	}
 
@@ -65,10 +66,10 @@ public class EmpServiceImpl implements EmpService {
 		int result = empMapper.deleteEmpInfo(employeeId);
 		
 		if(result == 1) {
-			map.put("employeeId" ,employeeId);
+			map.put("employeeId", employeeId);
 		}
-		// {}
-		// {"employeed" : 104}
+		
+		// {"employeeId": employeeId} 또는 {}를 리턴
 		return map;
 	}
 }
