@@ -18,7 +18,7 @@ class DeptTests {
 	@Autowired	// 필드 주입 => 단순 테스트 용도로만 사용해야 한다!!!
 	private DeptMapper deptMapper;
 	
-	@Test
+	//@Test
 	void contextLoads() {
 		List<DeptVO> list = deptMapper.selectDeptList();
 		for(DeptVO dept : list) {
@@ -30,11 +30,11 @@ class DeptTests {
 	//@Test
 	void infoTest() {
 		DeptVO deptVO = new DeptVO();
-		deptVO.setDepartmentId(555);
+		deptVO.setDepartmentId(10);
 		
 		DeptVO findVO = deptMapper.selectDeptInfo(deptVO);
 		
-		assertEquals("Kamen Rider", findVO.getDepartmentName());
+		assertEquals("Administration", findVO.getDepartmentName());
 		// 첫번째 매개변수 : 기대값
 		// 두번째 매개변수 : 실제값
 		// => 두 개가 같으면 테스트 성공, 다르면 실패
