@@ -7,13 +7,9 @@
 					<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
 				</a>
 				<ul class="dropdown-menu text-small shadow">
-					<li><a class="dropdown-item active" href="#" aria-current="page">Overview</a></li>
-					<li><a class="dropdown-item" href="#">Inventory</a></li>
-					<li><a class="dropdown-item" href="#">Customers</a></li>
-					<li><a class="dropdown-item" href="#">Products</a></li>
+					<li><a class="dropdown-item" th:href="@{/empList}">전체사원 조회</a></li>
+					<li><a class="dropdown-item" th:href="@{/empInsert}">사원 등록</a></li>
 					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="#">Reports</a></li>
-					<li><a class="dropdown-item" href="#">Analytics</a></li>
 				</ul>
 			</div>
 			

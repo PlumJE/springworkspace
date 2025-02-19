@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
+<html 
+	xmlns:th="https://www.thymeleaf.org/"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{common/layouts/default_layout}"
+	layout:fragment="content"
+	>
+
 <head>
 <meta charset="UTF-8">
-<meta name="contextPath" th:value="${contextPath}">
 <title>Insert title here</title>
 </head>
+
 <body>
 	<form name="updateForm" th:object="${emp}">	<!-- 객체선택 변수표현식 -->
 		<h3>사원 정보 수정</h3>
@@ -78,4 +84,5 @@
 		}
 	</script>
 </body>
+
 </html>

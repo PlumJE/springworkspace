@@ -42,7 +42,6 @@
 				</th:block>
 			</tbody>
 		</table>
-		<button type="button">등록</button>
 	</div>
 	<script>
 		const context = document.querySelector('meta[name="contextPath"]').getAttribute('value');
@@ -55,12 +54,6 @@
 				let eid = selectedTr.children[1].textContent;
 				location.href = context + '/empInfo?employeeId=' + eid;
 			});
-		});
-		
-		document
-		.querySelector('button')
-		.addEventListener('click', function(event) {
-			location.href = context + '/empInsert';
 		});
 	</script>
 </body>
