@@ -84,11 +84,13 @@
 		UPDATE employees
 		SET 
 			last_name = #{lastName}
+			, email = #{email}
+			, hire_date = #{hireDate}
 			<if test="jobId != null and !jobId.equals('')">
 			<!-- 특정 조건을 만족할 때만 실행되는 구문 -->
 			, job_id = #{jobId}
 			</if>
-			, hire_date = #{hireDate}
+			, salary = #{salary}
 		WHERE employee_id = #{employeeId}
 	</update>
 	

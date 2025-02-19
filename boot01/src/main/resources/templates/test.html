@@ -6,10 +6,10 @@
 </head>
 <body>
 	<!-- /* 타임리프 기본방식
-			1) th:속성 = "${}"
-			2) th:src = "@{}" or
-			   th:href = "@{}" or
-			   th:action = "@{}" */ -->
+			1) 변수 th:속성 = "${}"
+			2) 링크 th:src = "@{}" or
+				   th:href = "@{}" or
+				   th:action = "@{}" */ -->
 	<p th:id="${empInfo.employeeId}"
 		name="emp"
 		th:text="${empInfo.lastName + ' , ' + empInfo.firstName}"></p>

@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org/">
+<html 
+	xmlns:th="https://www.thymeleaf.org/"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{common/layouts/default_layout}"
+	layout:fragment="content"
+	>
+
 <head>
 <meta charset="UTF-8">
-<meta name="contextPath" th:value="${contextPath}">
+<title>사원 관리</title>
 <style>
 	table, th, th {
 		border: 1px solid black;
 	}
 </style>
-<title>사원 관리</title>
 </head>
+
 <body>
 	<div>
 		<h3>전체 사원 조회</h3>
@@ -26,7 +32,7 @@
 			<tbody>
 				<th:block th:each="info, sts : ${emps}">
 					<!--/* 반복하고자 하는 태그 */-->
-					<tr th:onclick="|location.href='@{/empInfo(employeeId=${info.employeeId})}';|">
+					<tr th:onclick="|location.href='@{/empInfo(employeeId=${info.employeeId})}'|">
 						<td>[[ ${sts.count} ]]</td>
 						<td th:text="${info.employeeId}"></td>
 						<td th:text="${info.lastName}"></td>
@@ -36,20 +42,27 @@
 				</th:block>
 			</tbody>
 		</table>
+		<button type="button">등록</button>
 	</div>
 	<script>
-		/*
-		const context = document.querySelector('meta[name="contextPath"]')
-			.getAttribute('value');
-		document.querySelectorAll('tbody > tr')
-			.forEach(function(trTag) {
-				trTag.addEventListener('click', function(event) {
-					let selectedTr = event.currentTarget;
-					let eid = selectedTr.children[1].textContent;
-					location.href = context + '/empInfo?employeeId=' + eid;
-				});
+		const context = document.querySelector('meta[name="contextPath"]').getAttribute('value');
+		
+		document
+		.querySelectorAll('tbody > tr')
+		.forEach(function(trTag) {
+			trTag.addEventListener('click', function(event) {
+				let selectedTr = event.currentTarget;
+				let eid = selectedTr.children[1].textContent;
+				location.href = context + '/empInfo?employeeId=' + eid;
 			});
-		*/
+		});
+		
+		document
+		.querySelector('button')
+		.addEventListener('click', function(event) {
+			location.href = context + '/empInsert';
+		});
 	</script>
 </body>
+
 </html>
