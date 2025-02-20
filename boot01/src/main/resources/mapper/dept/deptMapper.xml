@@ -19,7 +19,7 @@
 			, manager_id
 			, location_id
 		FROM departments
-		ORDER BY department_id = #{departmentId}
+		WHERE department_id = #{departmentId}
 		<!-- Mybatis =>
 			PrepareStatement =>
 			데이터 타입에 따른 작업 -->
@@ -31,9 +31,9 @@
 		<selectKey keyProperty="departmentId" resultType="Integer" order="BEFORE">
 		<!-- KeyProperty는 결과를 담을 필드/변수를 뜻한다 -->
 			SELECT NVL(MAX(department_id), 100) + 1
-			FROM employees
+			FROM departments
 		</selectKey>
-		INSERT INTO employees
+		INSERT INTO departments
 			(
 				department_id
 				, department_name
@@ -60,7 +60,7 @@
 	</update>
 	
 	<!-- 삭제 -->
-	<delete id="deleteDeptVO" paramteterType="int">
+	<delete id="deleteDeptVO" parameterType="int">
 		<!-- 객체가 아닌 기본 타입일 경우 매개변수 이름 그대로 사용 -->
 		DELETE FROM departments
 		WHERE department_id = #{deptId}
