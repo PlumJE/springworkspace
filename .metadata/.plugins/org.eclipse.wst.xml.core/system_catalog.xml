@@ -240,4 +240,5 @@
   <uri name="http://www.w3.org/2001/XMLSchema" uri="jar:file:/C:/Users/lje64/eclipse/jee-2024-09/eclipse/../../../.p2/pool/plugins/org.eclipse.xsd_2.20.0.v20240604-0832.jar!/cache/www.w3.org/2001/XMLSchema.xsd"/>
   <uri id="org.w3c.xinclude" name="http://www.w3.org/2001/XInclude" uri="jar:file:/C:/Users/lje64/eclipse/jee-2024-09/eclipse/../../../.p2/pool/plugins/org.eclipse.wst.xsl.core_1.2.200.v202405130119.jar!/xslt-schemas/xinclude.xsd"/>
   <public publicId="-//LOG4J//DTD LOG4J//EN" uri="jar:file:/C:/Users/lje64/eclipse/jee-2024-09/eclipse/../../../.p2/pool/plugins/org.springsource.ide.eclipse.commons.ui_4.28.0.202502031607.jar!/dtd/log4j-1.2.dtd" webURL="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd"/>
+  <public publicId="-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" uri="jar:file:/C:/Users/lje64/eclipse/jee-2024-09/eclipse/../../../.p2/pool/plugins/org.mybatis.generator.eclipse.ui_1.4.2.202302200051.jar!/dtds/mybatis-generator-config_1_0.dtd"/>
 </catalog>

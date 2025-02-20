@@ -76,13 +76,14 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\lje64\git\springworkspace\boot02"/>
 			<item value="C:\Users\lje64\git\springworkspace\SpringGradle"/>
 			<item value="C:\Users\lje64\git\springworkspace\SpringBoot"/>
 			<item value="C:\Users\lje64\git\springworkspace\demo"/>
 			<item value="C:\Users\lje64\git\springworkspace\boot01"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="590"/>
+			<item key="DIALOG_X_ORIGIN" value="663"/>
 			<item key="DIALOG_Y_ORIGIN" value="142"/>
 			<item key="DIALOG_WIDTH" value="938"/>
 			<item key="DIALOG_HEIGHT" value="726"/>
