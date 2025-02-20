@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yedam.app.board.mapper.BoardMapper">
+	<!-- 전체 조회 -->
+	<select id="selectAllList" resultType="BoardVO">
+		SELECT bno
+		    , title
+		    , contents
+		    , writer
+		    , regdate
+		    , updatedate
+		    , image
+		FROM board
+		ORDER BY regdate
+	</select>
+</mapper>
