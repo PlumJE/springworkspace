@@ -23,5 +23,11 @@ public class BoardServiceImpl implements BoardService {
 		// TODO Auto-generated method stub
 		return boardMapper.selectAllList();
 	}
-
+	
+	@Override
+	public BoardVO findBoardInfo(BoardVO boardVO) {
+		// TODO Auto-generated method stub
+		return boardMapper.selectInfo(boardVO);
+	}
+	
 }

@@ -14,4 +14,40 @@
 		FROM board
 		ORDER BY regdate
 	</select>
+	
+	<!-- 단건조회 -->
+	<select id="selectInfo" parameterType="BoardVO" resultType="BoardVO">
+		SELECT bno
+			, title
+			, contents
+			, writer
+			, regdate
+			, updatedate
+			, image
+		FROM board
+		WHERE bno = #{bno}
+	</select>
+	
+	<!-- 등록 -->
+	<insert id="insertInfo" parameterType="BoardVO">
+		<selectKey 
+			keyProperty=""
+			resultType="int"
+			order="BEFORE">
+			SELECT NVL(MAX(bno), -1) + 1
+			FROM board
+		</selectKey>
+		INSERT INTO board
+		VALUES(0
+			, #{title}
+			, #{contents}
+			, #{writer}
+			, SYSDATE
+			, SYSDATE
+			, #{image}
+		)
+	</insert>
+	<!-- 수정 -->
+	
+	<!-- 삭제 -->
 </mapper>

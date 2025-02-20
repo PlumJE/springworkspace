@@ -6,11 +6,39 @@
 	layout:fragment="content">
 <!--/* 각 기능별 페이지에 layout 적용 */-->
 <!-- common -->
+
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>게시판 목록</title>
 </head>
-<body>
 
+<body>
+	<!--/* boards */-->
+	<div class="container text-center">
+		<h3>게시판 목록</h3>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+					<th>작성자</th>
+					<th>작성일</th><!-- yyyy년 MM월 dd일 -->
+				</tr>
+			</thead>
+			<tbody>
+				<th:block th:each="board : ${boards}">
+					<tr 
+						th:id="${board.bno}" 
+						th:onclick="| location.href = '@{ /boardInfo(bno=${board.bno}) }' |">
+						<td>[[ ${board.bno} ]]</td>
+						<td>[[ ${board.title} ]]</td>
+						<td>[[ ${board.writer} ]]</td>
+						<td>[[ ${#dates.format(board.regdate, "yyyy년 MM월 dd일")} ]]</td>
+					</tr>
+				</th:block>
+			</tbody>				
+		</table>
+	</div>
 </body>
+
 </html>
