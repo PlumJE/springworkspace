@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html 
+	xmlns:th="https://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	>
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!--/* ~{파일경로 :: fragment이름} */-->
+<th:block th:replace="~{common/configs/style_config :: BootStrap5Config}"></th:block>
+</head>
+
+<body>
+	<!-- Header -->
+	<header th:insert="~{common/fragments/default_header :: HeaderFrag}"></header>
+	<!-- Content Page : 동적인 페이지 -->
+	<main>
+		<div layout:fragment="content"></div>
+	</main>
+	<!-- Footer -->
+</body>
+</html>
