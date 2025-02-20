@@ -7703,3 +7703,5 @@ org.eclipse.core.runtime.CoreException: Launch configuration DeptTests reference
 2025-02-16 16:20:35,048 [Worker-28: Launching SpringBootExample - DemoApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-02-16 16:20:35,059 [Worker-28: Launching SpringBootExample - DemoApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-02-16 16:20:35,064 [Worker-28: Launching SpringBootExample - DemoApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\lje64\git\springworkspace\SpringBootExample\src\test\resources
+2025-02-20 22:26:54,415 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-02-20 22:27:21,871 [Worker-1: Decoration Calculation] WARN  org.eclipse.jgit.util.FS - Cannot run program "\usr\bin\git" (in directory "\usr\bin"): CreateProcess error=2, 지정된 파일을 찾을 수 없습니다
