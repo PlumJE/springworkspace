@@ -31,23 +31,27 @@
 	<!-- 등록 -->
 	<insert id="insertInfo" parameterType="BoardVO">
 		<selectKey 
-			keyProperty=""
-			resultType="int"
+			keyProperty="bno"
+			resultType="Integer"
 			order="BEFORE">
 			SELECT NVL(MAX(bno), -1) + 1
 			FROM board
 		</selectKey>
-		INSERT INTO board
-		VALUES(0
+		INSERT INTO board(
+			bno
+			, title
+			, contents
+			, writer
+			, regdate
+			, image
+		)
+		VALUES(
+			#{bno}
 			, #{title}
 			, #{contents}
 			, #{writer}
-			, SYSDATE
-			, SYSDATE
+			, #{regdate}
 			, #{image}
 		)
 	</insert>
-	<!-- 수정 -->
-	
-	<!-- 삭제 -->
 </mapper>

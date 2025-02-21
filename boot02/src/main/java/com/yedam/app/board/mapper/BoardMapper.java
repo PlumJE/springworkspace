@@ -13,7 +13,4 @@ public interface BoardMapper {
 	
 	// 등록
 	public int insertInfo(BoardVO boardVO);
-	
-	// 수정
-	public int updateInfo(BoardVO boardVO);
 }

@@ -8,8 +8,8 @@
 <!-- common -->
 
 <head>
-<meta charset="UTF-8">
-<title>게시판 목록</title>
+	<meta charset="UTF-8">
+	<title>게시판 목록</title>
 </head>
 
 <body>
@@ -36,8 +36,9 @@
 						<td>[[ ${#dates.format(board.regdate, "yyyy년 MM월 dd일")} ]]</td>
 					</tr>
 				</th:block>
-			</tbody>				
+			</tbody>
 		</table>
+		<button type="button" class="btn btn-info" th:onclick="| location.href = '@{ /boardInsert }' |">등록</button>
 	</div>
 </body>
 

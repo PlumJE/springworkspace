@@ -24,10 +24,22 @@ public class BoardServiceImpl implements BoardService {
 		return boardMapper.selectAllList();
 	}
 	
-	@Override
+	@Override	// 선택한 게시글의 상세 조회
 	public BoardVO findBoardInfo(BoardVO boardVO) {
 		// TODO Auto-generated method stub
 		return boardMapper.selectInfo(boardVO);
+	}
+
+	@Override	// 작성한 게시글 등록
+	public int createBoard(BoardVO boardVO) {
+		// TODO Auto-generated method stub
+		int result = boardMapper.insertInfo(boardVO);
+		if(result == 1) {
+			return boardVO.getBno();
+		}
+		else {
+			return -1;
+		}
 	}
 	
 }
