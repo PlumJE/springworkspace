@@ -7,8 +7,10 @@
 	>
 
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<meta name="_csrf_header" th:value="${_csrf.headerName}">
+	<meta name="_csrf" th:value="${_csrf.token}">
+	<title>사원 수정</title>
 </head>
 
 <body>
@@ -43,12 +45,23 @@
 		</div>
 	</form>
 	<script>
+		const csrfHeader = document.querySelector('meta[name="_csrf_header"]').getAttribute("value");
+		const csrfToken = document.querySelector('meta[name="_csrf"]').getAttribute("value");
+		
 		document
 		.querySelector('form[name="updateForm"] button')
 		.addEventListener('click', updateAjax);
 		
+		const context = document
+		.querySelector('meta[name="contextPath"]')
+		.getAttribute('value');
+		
+		let headers = new Headers();
+		headers.append('Content-Type', 'application/json');
+		headers.append(csrfHeader, csrfToken);
+		//headers.forEach(console.log);
+		
 		function updateAjax(event) {
-			const context = document.querySelector('meta[name="contextPath"]').getAttribute('value');
 			
 			// 1) 보낼 데이터 가져오기
 			let dataObj = getFormData();
@@ -56,7 +69,7 @@
 			// 2) AJAX
 			fetch(`${context}/empUpdate`, {
 				method: 'POST',
-				headers: {"Content-Type": "application/json"},
+				headers,	// 'headers': headers
 				body: JSON.stringify(dataObj)
 			})
 			.then(res => res.json())

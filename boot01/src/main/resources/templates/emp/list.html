@@ -7,8 +7,8 @@
 	>
 
 <head>
-<meta charset="UTF-8">
-<title>사원 관리</title>
+	<meta charset="UTF-8">
+	<title>사원 관리</title>
 <style>
 	table, th, th {
 		border: 1px solid black;
@@ -42,6 +42,7 @@
 				</th:block>
 			</tbody>
 		</table>
+		<button th:onclick="|location.href = '@{/empInsert}'|">등록</button>
 	</div>
 	<script>
 		const context = document.querySelector('meta[name="contextPath"]').getAttribute('value');

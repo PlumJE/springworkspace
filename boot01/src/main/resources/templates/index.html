@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let base_url = 'http://127.0.0.1:8099/yd';
+
+        // 전체조회
+        fetch(base_url + '/emps')
+        .then(response => response.json())
+        .then(data => {
+            console.log('전체조회 ================================');
+            console.log(data);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+
+        // 단건조회
+        fetch(base_url + '/emps/209')
+        .then(response => response.json())
+        .then(data => {
+            console.log('단건조회 ================================');
+            console.log(data);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+
+        // 등록
+        /*
+        fetch(base_url + '/emps', {
+            method: 'POST',
+            // @RequestBody
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify({
+                'lastName': 'Hong',
+                'email': 'h@google.com',
+                'jobId': 'IT_PROG',
+            }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('등록 ==================================');
+            console.log(data);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+        */
+
+        // 수정
+        /*
+        emp_data = {
+            commissionPct: null,
+            departmentId: null,
+            email: "KHong@google.com",
+            employeeId: 209,
+            firstName: "Kildong",
+            lastName: "Hong",
+            hireDate: "2025-03-06T03:30:35.000+00:00",
+            jobId: "IT_PROG",
+            managerId: null,
+            phoneNumber: "010-2345-6789",
+            salary: 100
+        }
+        fetch(base_url + '/emps/209', {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify(emp_data),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('수정 =================================');
+            console.log(data);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+        */
+        
+        // 삭제
+        fetch(base_url + '/emps/209', {
+            method: 'DELETE',
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('삭제 =================================');
+            console.log(data);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+
+    </script>    
+</body>
+
+</html>
